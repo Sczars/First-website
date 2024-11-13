@@ -1,0 +1,33 @@
+{
+    "1": {
+      "name": "Free Shipping",
+      "image":"./img/features/f1.png",
+      "description": "Enjoy the convenience of free shipping on all orders, making your shopping experience affordable and hassle-free. With no extra fees at checkout, you can focus on choosing the products you love, and we'll take care of the rest!"
+    },
+    "2": {
+      "name": "Online Order",
+      "image":"./img/features/f2.png",
+      "description": "Shop from the comfort of your home with our easy online ordering system, designed for a seamless experience. Browse, select, and purchase your favorite items with just a few clicks, and enjoy fast, reliable delivery right to your door."
+    },
+    "3": {
+      "name": "Save Money",
+      "image":"./img/features/f3.png",
+      "description": "Unlock incredible savings with our everyday low prices, exclusive deals, and special discounts on a wide variety of products. With us, stretching your budget is easy—find the items you love without overspending!"
+    },
+    "4": {
+      "name": "Promotions",
+      "image":"./img/features/f4.png",
+      "description": "Our frequent promotions offer amazing deals and discounts on top brands and bestsellers. Check back regularly to discover limited-time offers that help you save big on your favorite products."
+    },
+    "5": {
+      "name": "Happy Sell",
+      "image":"./img/features/f5.png",
+      "description": "We believe shopping should be a joyful experience, which is why we focus on providing top-quality items with exceptional service. From browsing to checkout, we're here to make sure your experience leaves you smiling!"
+    },
+    "6": {
+      "name": "24/7 Support",
+      "image":"./img/features/f6.png",
+      "description": "Our customer service team is available 24/7 to assist you with any questions or concerns, ensuring a smooth shopping journey. Reach out anytime, and we'll be ready to help with anything you need."
+    }
+}
+  
