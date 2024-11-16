@@ -6,9 +6,11 @@ $(document).ready(function(){
 
     $.getJSON("../data/feature.json", function(data, des) {
         get_feature_des(data, $("#feature"))
+    }).then(function(){
+        $("#fe-de-1").show()
+        $("#feature #1").addClass("fe-active")
     })
 
-    handle_hover_fe_des()
 })
 
 function get_product(data, start, end, des) {
@@ -46,7 +48,7 @@ function get_product(data, start, end, des) {
     })
 }
 
-function get_feature_des(data, des) {
+async function get_feature_des(data, des) {
     $.each(data, function(index, fe){
         // add image
         var image = $('<img>').attr("src", fe.image)
@@ -63,13 +65,13 @@ function get_feature_des(data, des) {
 
         var desc_sec = $('<section></section>').attr("id", "fe-de-" + String(index)).addClass('se-p1 fe-de').hide().append(text)
 
-        $(".fe-box").on("click", function(){
+        $(".fe-box").hover(function(){
             $(".fe-de").hide()
             $("#fe-de-" + $(this).attr("id")).show()
+            $('.fe-box').removeClass('fe-active')
+            $(this).addClass('fe-active')
         })
 
         $(desc_sec).insertAfter('#feature')
     })
-
-    $("#fe-de-1").show()
 }

@@ -1,117 +1,164 @@
 {
-    "products": [
-      {
-        "brand": "Nike",
-        "category": "T-shirts",
-        "image": "./img/products/f1.jpg",
-        "price": "$98",
-        "rating": 3
-      },
-      {
-        "brand": "Puma",
-        "category": "T-shirts",
-        "image": "./img/products/f2.jpg",
-        "price": "$56",
-        "rating": 5
-      },
-      {
-        "brand": "adidas",
-        "category": "T-shirts",
-        "image": "./img/products/f3.jpg",
-        "price": "$73",
-        "rating": 2
-      },
-      {
-        "brand": "Reebok",
-        "category": "T-shirts",
-        "image": "./img/products/f4.jpg",
-        "price": "$85",
-        "rating": 4
-      },
-      {
-        "brand": "Under Armour",
-        "category": "T-shirts",
-        "image": "./img/products/f5.jpg",
-        "price": "$62",
-        "rating": 1
-      },
-      {
-        "brand": "Nike",
-        "category": "T-shirts",
-        "image": "./img/products/f6.jpg",
-        "price": "$77",
-        "rating": 5
-      },
-      {
-        "brand": "Puma",
-        "category": "Pants",
-        "image": "./img/products/f7.jpg",
-        "price": "$91",
-        "rating": 3
-      },
-      {
-        "brand": "adidas",
-        "category": "Blouse",
-        "image": "./img/products/f8.jpg",
-        "price": "$53",
-        "rating": 4
-      },
-      {
-        "brand": "Reebok",
-        "category": "Shirts",
-        "image": "./img/products/n1.jpg",
-        "price": "$66",
-        "rating": 2
-      },
-      {
-        "brand": "Under Armour",
-        "category": "Shirts",
-        "image": "./img/products/n2.jpg",
-        "price": "$100",
-        "rating": 5
-      },
-      {
-        "brand": "Nike",
-        "category": "Shirts",
-        "image": "./img/products/n3.jpg",
-        "price": "$59",
-        "rating": 3
-      },
-      {
-        "brand": "Puma",
-        "category": "T-shirts",
-        "image": "./img/products/n4.jpg",
-        "price": "$83",
-        "rating": 4
-      },
-      {
-        "brand": "adidas",
-        "category": "Shirts",
-        "image": "./img/products/n5.jpg",
-        "price": "$76",
-        "rating": 2
-      },
-      {
-        "brand": "Reebok",
-        "category": "Shorts",
-        "image": "./img/products/n6.jpg",
-        "price": "$95",
-        "rating": 1
-      },
-      {
-        "brand": "Under Armour",
-        "category": "Shirts",
-        "image": "./img/products/n7.jpg",
-        "price": "$67",
-        "rating": 4
-      },
-      {
-        "brand": "Nike",
-        "category": "T-shirts",
-        "image": "./img/products/n8.jpg",
-        "price": "$51",
-        "rating": 5
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": "pro1",
+      "brand": "Nike",
+      "category": "T-shirts",
+      "image": "./img/products/f1.jpg",
+      "price": "$98",
+      "rating": 3,
+      "date": "05-24-14",
+      "description": "This premium Nike T-shirt combines style and comfort for everyday wear. Its lightweight fabric ensures breathability, making it perfect for casual outings or active days. With a mid-range rating, it's a reliable choice for those seeking a balance of quality and value."
+    },
+    {
+      "id": "pro2",
+      "brand": "Puma",
+      "category": "T-shirts",
+      "image": "./img/products/f2.jpg",
+      "price": "$56",
+      "rating": 5,
+      "date": "07-29-09",
+      "description": "Puma's T-shirt offers unbeatable comfort and a sleek design, perfect for any wardrobe. Its affordable price and top-tier rating make it a customer favorite. Ideal for both athletic and casual wear, it's a must-have for style-conscious shoppers."
+    },
+    {
+      "id": "pro3",
+      "brand": "adidas",
+      "category": "T-shirts",
+      "image": "./img/products/f3.jpg",
+      "price": "$73",
+      "rating": 2,
+      "date": "01-14-23",
+      "description": "This adidas T-shirt features a sporty look with a focus on functionality. Despite a lower rating, it offers durability and comfort for light activities. Its versatile design suits various casual occasions."
+    },
+    {
+      "id": "pro4",
+      "brand": "Reebok",
+      "category": "T-shirts",
+      "image": "./img/products/f4.jpg",
+      "price": "$85",
+      "rating": 4,
+      "date": "11-12-05",
+      "description": "Reebok's T-shirt brings a modern edge to classic comfort, perfect for fitness enthusiasts. The high-quality material and positive ratings reflect its superior craftsmanship. Its stylish design makes it suitable for workouts and casual wear alike."
+    },
+    {
+      "id": "pro5",
+      "brand": "Under Armour",
+      "category": "T-shirts",
+      "image": "./img/products/f5.jpg",
+      "price": "$62",
+      "rating": 1,
+      "date": "08-24-04",
+      "description": "This Under Armour T-shirt provides basic functionality with a focus on simplicity. While rated lower, it offers a budget-friendly option for light wear. Its classic style ensures versatility in casual settings."
+    },
+    {
+      "id": "pro6",
+      "brand": "Nike",
+      "category": "T-shirts",
+      "image": "./img/products/f6.jpg",
+      "price": "$77",
+      "rating": 5,
+      "date": "01-03-24",
+      "description": "Nike delivers another standout with this high-rated T-shirt, blending cutting-edge design with exceptional comfort. It's perfect for both active and relaxed days. Trust its top-tier rating for a product that exceeds expectations."
+    },
+    {
+      "id": "pro7",
+      "brand": "Puma",
+      "category": "Pants",
+      "image": "./img/products/f7.jpg",
+      "price": "$91",
+      "rating": 3,
+      "date": "01-04-10",
+      "description": "These Puma pants offer a balance of style and function for everyday use. Their moderate rating reflects their reliable performance. Perfect for casual outings or light workouts, they are a versatile addition to any wardrobe."
+    },
+    {
+      "id": "pro8",
+      "brand": "adidas",
+      "category": "Blouse",
+      "image": "./img/products/f8.jpg",
+      "price": "$53",
+      "rating": 4,
+      "date": "05-25-14",
+      "description": "adidas delivers elegance and comfort with this blouse, designed for modern tastes. Its positive rating highlights its appeal for casual and semi-formal occasions. Enjoy a blend of style and affordability with this top choice."
+    },
+    {
+      "id": "pro9",
+      "brand": "Reebok",
+      "category": "Shirts",
+      "image": "./img/products/n1.jpg",
+      "price": "$66",
+      "rating": 2,
+      "date": "07-14-03",
+      "description": "This Reebok shirt focuses on simplicity and practicality. While rated lower, it serves as a durable option for basic needs. Its straightforward design makes it a useful staple for any wardrobe."
+    },
+    {
+      "id": "pro10",
+      "brand": "Under Armour",
+      "category": "Shirts",
+      "image": "./img/products/n2.jpg",
+      "price": "$100",
+      "rating": 5,
+      "date": "05-07-24",
+      "description": "Under Armour showcases premium craftsmanship with this top-rated shirt. Designed for ultimate comfort and durability, it justifies its price. Ideal for both active and formal settings, it's a versatile and stylish option."
+    },
+    {
+      "id": "pro11",
+      "brand": "Nike",
+      "category": "Shirts",
+      "image": "./img/products/n3.jpg",
+      "price": "$59",
+      "rating": 3,
+      "date": "09-10-10",
+      "description": "Nike's shirt combines casual comfort with a modern look, making it great for everyday wear. Its average rating reflects consistent performance. Perfect for layering or wearing solo, it's a dependable choice."
+    },
+    {
+      "id": "pro12",
+      "brand": "Puma",
+      "category": "T-shirts",
+      "image": "./img/products/n4.jpg",
+      "price": "$83",
+      "rating": 4,
+      "date": "04-29-11",
+      "description": "This Puma T-shirt offers a fresh look with reliable quality. Its high rating speaks to its popularity among customers. Lightweight and versatile, it's suitable for a variety of activities."
+    },
+    {
+      "id": "pro13",
+      "brand": "adidas",
+      "category": "Shirts",
+      "image": "./img/products/n5.jpg",
+      "price": "$76",
+      "rating": 2,
+      "date": "10-11-04",
+      "description": "adidas' shirt provides essential comfort and a sporty design. While rated lower, it remains a solid option for casual wear. Its durable material ensures longevity for everyday use."
+    },
+    {
+      "id": "pro14",
+      "brand": "Reebok",
+      "category": "Shorts",
+      "image": "./img/products/n6.jpg",
+      "price": "$95",
+      "rating": 1,
+      "date": "04-19-03",
+      "description": "These Reebok shorts emphasize practicality with a straightforward design. Despite a lower rating, they offer durability for light activities. Perfect for laid-back days, they cater to minimalist preferences."
+    },
+    {
+      "id": "pro15",
+      "brand": "Under Armour",
+      "category": "Shirts",
+      "image": "./img/products/n7.jpg",
+      "price": "$67",
+      "rating": 4,
+      "date": "03-08-23",
+      "description": "Under Armour's shirt combines sleek design with comfort, making it a high-rated favorite. Suitable for both workouts and casual wear, it offers versatility. Its positive reviews highlight its excellent quality and value."
+    },
+    {
+      "id": "pro16",
+      "brand": "Nike",
+      "category": "T-shirts",
+      "image": "./img/products/n8.jpg",
+      "price": "$51",
+      "rating": 5,
+      "date": "12-26-16",
+      "description": "Nike delivers a perfect blend of style and affordability with this highly-rated T-shirt. Lightweight and comfortable, it's ideal for all-day wear. Its budget-friendly price and quality make it a popular choice."
+    }
+  ]
+}
