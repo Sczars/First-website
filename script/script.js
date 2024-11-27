@@ -11,39 +11,45 @@ $(document).ready(function(){
         $("#feature #1").addClass("fe-active")
     })
 
+
 })
 
 function get_product(data, start, end, des) {
     $.each(data.products, function(index, item) {
         if (index >= start && index <= end) {
             //add star
-        var star_rating = $('<div></div>').addClass("star")
-        for (var i = 0; i < item.rating; i++){
-            star_rating.append("<i class='fas fa-star'></i>")
-        }
+            var star_rating = $('<div></div>').addClass("star")
+            for (var i = 0; i < item.rating; i++){
+                star_rating.append("<i class='fas fa-star'></i>")
+            }
 
-        // add price
-        var price = $("<h4></h4>").text(item.price)
+            // add price
+            var price = $("<h4></h4>").text(item.price)
 
-        // add name
-        var name = $("<h5></h5>").text(item.category)
+            // add name
+            var name = $("<h5></h5>").text(item.category)
 
-        // add image
-        var image = $('<img>').attr("src", item.image)
+            // add image
+            var image = $('<img>').attr("src", item.image)
 
-        // add brand
-        var brand = $('<span></span>').text(item.brand)
+            // add brand
+            var brand = $('<span></span>').text(item.brand)
 
-        // add cart
-        var cart = $('<a></a>').attr('href', '#').append("<i class='fa fa-cart-plus cart' aria-hidden='true'></i>")
+            // add cart
+            var cart = $('<a></a>').attr('href', '#').append("<i class='fa fa-cart-plus cart' aria-hidden='true'></i>")
 
-        // assemble
-        var desc = $('<div></div>').addClass("des").append(brand, name, star_rating, price)
+            // assemble
+            var desc = $('<div></div>').addClass("des").append(brand, name, star_rating, price)
 
-        var product_element = $('<div></div>').addClass("product");
-        product_element.append(image, desc, cart)
+            var product_element = $('<div></div>').addClass("product");
+            product_element.append(image, desc, cart)
 
-        des.append(product_element)
+            // add pop up description
+            product_element.on("click", function(){
+                get_pro_des(item.id)
+            })
+
+            des.append(product_element)
         }
     })
 }
@@ -73,5 +79,53 @@ async function get_feature_des(data, des) {
         })
 
         $(desc_sec).insertAfter('#feature')
+    })
+}
+
+function get_pro_des(pro_id) {
+    $.getJSON("../data/items.json", function(data){
+        const product = data.products.find(p => p.id === pro_id)
+
+        var star_rating = $('<div></div>').addClass("star")
+        for (var i = 0; i < product.rating; i++){
+            star_rating.append("<i class='fas fa-star'></i>")
+        }
+
+        // add price
+        var price = $("<h5></h5>").text(product.price)
+
+        // add name
+        var name = $("<h4></h4>").text(product.category)
+
+        // add image
+        var image = $('<img>').attr("src", product.image)
+
+        // add brand
+        var brand = $('<span></span>').text(product.brand)
+
+        // add description
+        var description = $("<p></p>").text(product.description)
+
+        // assemble
+        var pro_desc = $('<div></div>').addClass("pre-des").append(name, brand, star_rating, price, description)
+
+        // cart
+        var cart = $("<button></button>").addClass("normal des-cart").append("<i class='fa fa-cart-plus cart' aria-hidden='true'></i>")
+
+        // exit
+        var exit = $("<button></button>").addClass('exit').text("X")
+        exit.on("click", function(){
+            $(".product-pre").remove()
+            $(".blank-space").remove()
+        })
+
+        var product_element = $('<div></div>').addClass("product-pre");
+        product_element.append(image, pro_desc, cart, exit)
+
+        $("body").append(product_element)
+        $("body").append($("<div></div>").addClass("blank-space").on("click", function(){
+            $(".product-pre").remove()
+            $(".blank-space").remove()
+        }))
     })
 }

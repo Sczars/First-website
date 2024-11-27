@@ -38,6 +38,10 @@ p {
 }
 
 
+.stop-scroll {
+    overflow: hidden;
+}
+
 button.normal {
     font-size: 0.85rem;
     font-weight: 800;
@@ -325,16 +329,15 @@ button.tp {
 
 /* Product preview*/
 .blank-space {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: #0000002d;
+    background-color: #0000008e;
 
     z-index: 50;
-    display: none;
 }
 
 .product-pre {
@@ -347,9 +350,9 @@ button.tp {
     padding: 30px;
     transform: translate(50%, 50%);
 
-    border: 5px solid #508f7a;
+    border: 5px double #508f7a;
     border-radius: 15px;
-    background-color: #f5c8c8;
+    background-color: #fff;
     color: #222;
 
     height: 50vh;
@@ -363,28 +366,69 @@ button.tp {
 }
 
 
-.product-pre button {
+.product-pre .des-cart {
     text-align: center;
+    font-size: 1rem;
     width: 150px;
+    background-color: #f7e3ca;
 
     position: absolute;
     bottom: 5%;
     right: 3%;
 }
 
-.product-pre button:hover{
+.product-pre .des-cart:hover, .product-pre .exit:hover {
     background-color: #f24a4a;
     color: #fff;
+}
+
+.product-pre .exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+
+    border: 1px solid #dbd7d7;
+    background-color: #fff;
+    transition: .2s;
 }
 
 .pre-des {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     width: 75%;
     height: 75%;
     margin-left: 30px;
+}
+
+.pre-des span{
+    font-weight: 100;
+    font-size: 1.8rem;
+    
+    color: #222;
+    opacity: 50%;
+}
+
+.pre-des .star {
+    color: #f2b74a;
+}
+
+.pre-des h4 {
+    color: #fa6e6e;
+}
+
+.pre-des h5 {
+    font-size: 1.2rem;
+    color: #59cd6f;
+}
+
+.pre-des p {
+    font-size: 1.5rem;
 }
 
 /* middle banner */
